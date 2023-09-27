@@ -10,12 +10,12 @@
 
 <body>
     <h1>{{ .Site.Title}}</h1>
+    <h2>{{ .Title }}</h2>
     {{ .Content }}
     <header>
         <nav>
             <ul>
-                <li><a href="{{ relURL "about" }}">Sobre</a></li>
-                <li><a href="{{ relURL "audio" }}">Podcasts</a></li>
+                <li><a href="{{ relURL "" }}">Home</a></li>
             </ul>
         </nav>
     </header>
