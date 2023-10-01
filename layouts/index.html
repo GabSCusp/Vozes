@@ -5,27 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="styles\inicio.css">
     <title>{{ .Site.Title }}</title> 
 </head>
 
 <body>
     <header>
-     <h1>{{ .Site.Title}}</h1>
-     {{ .Content }}
-            <div class = 'nav'>
-                <div class = 'esquerda'>
-                    <img class = "logo" src = images\logo.png>
-                </div>
-                <div class = 'centro'>
-                    <a class = "menu" href="{{ relURL "about" }}">Sobre</a>
-                    <a class = "menu" href="{{ relURL "audio" }}">Podcasts</a>
-                    <a class = "menu" href="{{ relURL "descrições" }}">Descrições</a>
-                </div>
-                <div class = "direita">
-                    
-                </div>
-            </div>  
+            <nav>
+                <ul>
+                    <h1>{{ .Site.Title}}</h1>
+                    <li><a class = "menu" href="{{ relURL "about" }}">Sobre</a></li>
+                    <li><a class = "menu" href="{{ relURL "audio" }}">Podcasts</a></li>
+                    <li><a class = "menu" href="{{ relURL "descrições" }}">Descrições</a></li>
+                </ul>
+            </nav>  
     </header>
 
     <main>
