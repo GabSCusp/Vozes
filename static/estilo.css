@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.esquerda, .direita, .centro{
+    background-color: crimson;
+    min-height: 60px;
+    flex: 1;
+}
+
+.centro{
+    text-align: center;
+    min-height: 60px;
+    min-width: 700px;
+}
+
+.menu{
+    font-size: 28px;
+    padding: 6px;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.direita{
+    background-color:crimson;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(148, 22, 47);
+}

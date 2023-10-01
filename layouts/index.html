@@ -5,27 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="estilo.css">
+    <title>{{ .Site.Title }}</title> 
 </head>
 
 <body>
-    <h1>{{ .Site.Title}}</h1>
-    {{ .Content }}
     <header>
-        <nav>
-            <ul>
-                <li><a href="{{ relURL "about" }}">Sobre</a></li>
-                <li><a href="{{ relURL "audio" }}">Podcasts</a></li>
-            </ul>
-        </nav>
+     <h1>{{ .Site.Title}}</h1>
+     {{ .Content }}
+            <div class = 'nav'>
+                <div class = 'esquerda'>
+                    <img class = "logo" src = images\logo.png>
+                </div>
+                <div class = 'centro'>
+                    <a class = "menu" href="{{ relURL "about" }}">Sobre</a>
+                    <a class = "menu" href="{{ relURL "audio" }}">Podcasts</a>
+                    <a class = "menu" href="{{ relURL "descrições" }}">Descrições</a>
+                </div>
+                <div class = "direita">
+                    
+                </div>
+            </div>  
     </header>
+
     <main>
+        <h2>Bem vindo a minha página</h2>
         <p>Esta página foi criada com o objetivo de hospedar pequenos "podcasts", demonstrando a capacidade de criação de sites estáticos da ferramenta HUGO.</p>
         <p>Sinta-se a vontade para ouvir os aúdios, que de certa forma acompanham o desenvolvimento da página em si.</p>
     </main>
-    <footer>
 
+    <footer>
+        <p>copyright 2023</p>
     </footer>
 </body>
 
