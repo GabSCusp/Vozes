@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="\styles\pod.css">
     <title>{{ .Site.Title }}</title>
 </head>
 
@@ -20,6 +20,36 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="container">
+            <audio controls style="width: 50%; margin-bottom: 20px">
+                <source src="\audio\pod1.wav" type="audio/wav">
+            </audio>
+
+            <audio controls style="width: 50%; margin-bottom: 20px">
+                <source src="\audio\pod2.wav" type="audio/wav">
+            </audio>
+
+            <audio controls style="width: 50%; margin-bottom: 20px">
+                <source src="\audio\pod3.wav" type="audio/wav">
+            </audio>
+
+            <audio controls style="width: 50%; margin-bottom: 20px">
+                <source src="\audio\pod4.wav" type="audio/wav">
+            </audio>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <h1>{{ .Site.Title}}</h1>
+                <li><a class = "menu" href="{{ relURL "about" }}">Sobre</a></li>
+                <li><a class = "menu" href="{{ relURL "descrições" }}">Descrições</a></li>
+            </ul>
+        </nav>  
+    </footer>
 </body>
 
 </html>
