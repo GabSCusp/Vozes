@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\styles\desc.css">
+    <title>{{ .Site.Title }}</title>
+</head>
+
+<body>
+    <header>
+        <h1>Descrições dos episódios</h1>
+        <img src="/images/logo.png">
+    </header>
+
+    <main>
+        <p>Olá, nesta página estão contidas decrições dos áudios.</p>
+        <p>Espero que elas forneçam algum contexto extra para a compreensão de cada um</p>
+        <ul class="texto">
+            <p>Episódio 1:</p>
+            <li>Primeiro áudio de todos, quando a ideia ainda era incerta.</li>
+            <li>Aprendi sobre controle de áudio no HTML5 em um site simples</li>
+            <li>Fui introdizido aos shortcodes, porém os removi mais tarde</li>
+            <br>
+            <p>Episódio 2:</p>
+            <li>Implementação de áudio via shortcodes funcionou nesse dia</li>
+            <li>Os estilos ainda não estavam prontos</li>
+            <li>Os layouts pareciam bons, porém acabei mudando bastante depois</li>
+            <br>
+            <p>Episódio 3:</p>
+            <li>A aplicação de CSS flexbox estava me dando bastante trabalho</li>
+            <li>Achar um esquema de cores para o site se provou difícil</li>
+            <li>Retornei para um site com fundo branco mesmo</li>
+            <br>
+            <p>Episódio 4:</p>
+            <li>A criação da home estava feita</li>
+            <li>Elementos CSS de outras páginas se tornam mais fáceis</li>
+            <li>Em especial, a barra de navegação é aproveitada integralmente</li>
+            <br>
+            <p>Episódio 5:</p>
+            <li>Aqui eu descrevo os problemas enfentrados para aplicar CSS</li>
+            <li>Páginas que não fossem a home não recebiam as regras</li>
+            <li>No fim, ainda não consegui descobrir o motivo do problema</li>
+            <br>
+            <p>Episódio 6:</p>
+            <li>Toques finais</li>
+            <li>Media queries implementados</li>
+            <li>A adição desse episódio é a última tarefa restante</li>
+        </ul>
+    </main>
+
+    <footer>
+        <nav>
+            <ol>
+                <h1>{{ .Site.Title}}</h1>
+                <li><a class = "menu" href="{{ relURL "" }}">Home</a></li>
+                <li><a class = "menu" href="{{ relURL "audio" }}">Podcasts</a></li>
+                <li><a class = "menu" href="{{ relURL "about" }}">Sobre</a></li>
+            </ol>
+        </nav>  
+    </footer>
+</body>

@@ -5,27 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\inicio.css">
+    <link rel="stylesheet" href="\styles\sobre.css">
     <title>{{ .Site.Title }}</title>
 </head>
 
 <body>
     <header>
-
+        <h1>Sobre o autor</h1>
+        <img src="/images/logo.png">
     </header>
 
     <main>
-
+        <p>Olá, nesta página estão contidas alguams informações sobre mim.</p>
+        <p>Além disso, estão disponibilizados meios de me contatar</p>
+        <ul class="texto">
+            <p>Sobre mim</p>
+            <br>
+            <li>Atualmente estudante de graduação</li>
+            <li>Atendo a Escola Politécnica da USP</li>
+            <li>Criei esse site para uma matéria que estou cursando atualmente</li>
+            <br>
+            <br>
+            <p>Informações para contato</p>
+            <br>
+            <li>E-mail: naomecontate@hotmail.com</li>
+            <li>Telefone: (99) 9999-99999</li>
+            <li>Mais informações: <a href="https://www.poli.usp.br/">Site da Poli</a></li>
+        </ul>
     </main>
 
     <footer>
         <nav>
-            <ul>
+            <ol>
                 <h1>{{ .Site.Title}}</h1>
                 <li><a class = "menu" href="{{ relURL "" }}">Home</a></li>
-                <li><a class = "menu" href="{{ relURL "about" }}">Sobre</a></li>
+                <li><a class = "menu" href="{{ relURL "audio" }}">Podcasts</a></li>
                 <li><a class = "menu" href="{{ relURL "descrições" }}">Descrições</a></li>
-            </ul>
+            </ol>
         </nav>  
     </footer>
 </body>

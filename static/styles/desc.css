@@ -5,13 +5,12 @@
 }
 
 footer{
-    bottom: 0;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
-    justify-self: auto;
+    box-shadow: 0 -1px 8px #ddd;
+    margin-top: 600px;
 }
 
 @media (max-width: 768px) {
@@ -19,6 +18,7 @@ footer{
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        margin-top: 1000px;
     }
 }
 
@@ -45,26 +45,6 @@ footer a:hover {
     color: #b2dfdb;
 }
 
-main h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-main audio{
-    margin: 0 auto;
-    display: block;
-    padding: 20px;
-    width: 50%;
-}
-
-main h3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 header{
     display: flex;
     align-items: center;
@@ -75,4 +55,25 @@ header img{
     width: 50px;
     height: 50px;
     padding: 20px;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+main ul{
+    list-style: square;
+    padding: 45px;
+    position: absolute;
+    left: 425px;
+}
+
+@media(max-width: 768px){
+    main ul{
+        left: 0px;
+    }
 }

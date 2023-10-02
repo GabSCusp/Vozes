@@ -1,4 +1,4 @@
 +++
 draft = false
-layout = "list"
+layout = "desc"
 +++

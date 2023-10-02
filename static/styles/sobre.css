@@ -5,13 +5,22 @@
 }
 
 footer{
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
-    justify-self: auto;
+    box-shadow: 0 -1px 8px #ddd;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    footer {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 footer h1 {
@@ -35,4 +44,37 @@ footer a {
 
 footer a:hover {
     color: #b2dfdb;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+main ul{
+    list-style: square;
+    padding: 45px;
+    position: absolute;
+    left: 425px;
+}
+
+@media(max-width: 768px){
+    main ul{
+        left: 0px;
+    }
 }
