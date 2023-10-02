@@ -10,16 +10,24 @@
 </head>
 
 <body>
-    <h1>{{ .Site.Title}}</h1>
-    <h2>{{ .Title }}</h2>
-    {{ .Content }}
     <header>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
         <nav>
             <ul>
-                <li><a href="{{ relURL "" }}">Home</a></li>
+                <h1>{{ .Site.Title}}</h1>
+                <li><a class = "menu" href="{{ relURL "" }}">Home</a></li>
+                <li><a class = "menu" href="{{ relURL "about" }}">Sobre</a></li>
+                <li><a class = "menu" href="{{ relURL "descrições" }}">Descrições</a></li>
             </ul>
-        </nav>
-    </header>
+        </nav>  
+    </footer>
 </body>
 
 </html>

@@ -10,34 +10,40 @@
 </head>
 
 <body>
-    <h1>{{ .Site.Title}}</h1>
-    <h2>{{ .Title }}</h2>
-    {{ .Content }}
     <header>
-        <nav>
-            <ul>
-                <li><a href="{{ relURL "" }}">Home</a></li>
-            </ul>
-        </nav>
+        <h1>Página dos podcasts</h1>
+        <img src="/images/logo.png">
     </header>
 
     <main>
-        <div class="container">
-            <audio controls style="width: 50%; margin-bottom: 20px">
+        <div class = "container">
+            <h2>Aqui se encontram todos os áudios produzidos durante a criação desse site:</h2>
+
+            <h3>Episódio 1:</h3>
+            <audio controls>
                 <source src="\audio\pod1.wav" type="audio/wav">
             </audio>
 
-            <audio controls style="width: 50%; margin-bottom: 20px">
+            <h3>Episódio 2:</h3>
+            <audio controls>
                 <source src="\audio\pod2.wav" type="audio/wav">
             </audio>
 
-            <audio controls style="width: 50%; margin-bottom: 20px">
+            <h3>Episódio 3:</h3>
+            <audio controls>
                 <source src="\audio\pod3.wav" type="audio/wav">
             </audio>
 
-            <audio controls style="width: 50%; margin-bottom: 20px">
+            <h3>Episódio 4:</h3>
+            <audio controls>
                 <source src="\audio\pod4.wav" type="audio/wav">
             </audio>
+
+            <h3>Episódio 5:</h3>
+            <audio controls>
+                <source src="\audio\pod5.wav" type="audio/wav">
+            </audio>
+
         </div>
     </main>
 
@@ -45,6 +51,7 @@
         <nav>
             <ul>
                 <h1>{{ .Site.Title}}</h1>
+                <li><a class = "menu" href="{{ relURL "" }}">Home</a></li>
                 <li><a class = "menu" href="{{ relURL "about" }}">Sobre</a></li>
                 <li><a class = "menu" href="{{ relURL "descrições" }}">Descrições</a></li>
             </ul>

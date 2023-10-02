@@ -5,5 +5,66 @@
 }
 
 footer{
-    color:yellowgreen;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+    justify-self: auto;
+}
+
+footer h1 {
+    font-size: 1.5em;
+    display: inline-block;
+    margin-right: 670px;
+}
+
+footer li {
+    justify-content: flex-end;
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #555;
+}
+
+footer a:hover {
+    color: #b2dfdb;
+}
+
+main h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main audio{
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    width: 50%;
+}
+
+main h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
 }
